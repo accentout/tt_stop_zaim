@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\FormController;
 use App\Http\Controllers\Api\PaymentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,5 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResources([
-    'payments' => PaymentController::class
+    'payments' => PaymentController::class,
+    'forms' => FormController::class
 ]);
