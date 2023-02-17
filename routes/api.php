@@ -22,5 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResources([
     'payments' => PaymentController::class,
-    'forms' => FormController::class
+    'form_tss' => FormController::class
 ]);
